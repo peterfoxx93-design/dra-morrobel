@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, MessageCircle, Phone } from "lucide-react";
 
-const WHATSAPP_NUMBER = "18295202975";
-const PHONE_DISPLAY = "(829) 520-2975";
+const WHATSAPP_NUMBER = "18493546414";
+const PHONE_DISPLAY = "(849) 354-6414";
 
 const services = [
   "Consulta General",

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { MessageCircle, X, ChevronRight } from "lucide-react";
 
-const WHATSAPP_NUMBER = "18295202975";
+const WHATSAPP_NUMBER = "18493546414";
 
 const quickReplies = [
   {

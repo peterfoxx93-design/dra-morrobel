@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
-/* ── DentiSalud Bávaro — Brand Colors ── */
+/* ── Dra. Ingrid Morrobel — Brand Colors ── */
 @theme {
   --color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-300: #a5b4fc;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #0033cc;
-  --color-brand-700: #0029a3;
-  --color-brand-800: #001f7a;
-  --color-brand-900: #001452;
+  --color-brand-100: #dbe6f0;
+  --color-brand-200: #b8cce0;
+  --color-brand-300: #8aa8c9;
+  --color-brand-400: #5c84b3;
+  --color-brand-500: #2e609c;
+  --color-brand-600: #001f5b;
+  --color-brand-700: #001a4a;
+  --color-brand-800: #001338;
+  --color-brand-900: #000c26;
 
-  --color-accent-50: #e6faff;
-  --color-accent-100: #b3f0ff;
-  --color-accent-200: #80e5ff;
-  --color-accent-300: #4ddbff;
-  --color-accent-400: #1ad1ff;
-  --color-accent-500: #00ccff;
-  --color-accent-600: #00a3cc;
-  --color-accent-700: #007a99;
-  --color-accent-800: #005266;
-  --color-accent-900: #002933;
+  --color-accent-50: #fdf8e8;
+  --color-accent-100: #f9efc5;
+  --color-accent-200: #f3df8a;
+  --color-accent-300: #edcf54;
+  --color-accent-400: #d4af37;
+  --color-accent-500: #c9a96e;
+  --color-accent-600: #b8942e;
+  --color-accent-700: #9a7a1e;
+  --color-accent-800: #7c6012;
+  --color-accent-900: #5e4608;
 }
 
 /* ── Smooth Scroll ── */

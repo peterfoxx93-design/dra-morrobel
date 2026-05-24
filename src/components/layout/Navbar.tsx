@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Phone } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -24,13 +23,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-brand-100">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2">
-          <span className="text-lg font-bold text-brand-600">DentiSalud</span>
-          <span className="text-lg font-bold text-accent-500">Bávaro</span>
+          <span className="text-lg font-bold text-brand-600">Dra. Ingrid</span>
+          <span className="text-lg font-bold text-accent-500">Morrobel</span>
         </a>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -50,7 +47,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-2 text-dark-600"
@@ -59,7 +55,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

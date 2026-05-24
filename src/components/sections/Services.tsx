@@ -1,70 +1,55 @@
 "use client";
 
 import { motion } from "motion/react";
-import {
-  Sparkles,
-  Braces,
-  Syringe,
-  Smile,
-  Stethoscope,
-  Heart,
-} from "lucide-react";
+import { Smile, Braces, Syringe, Stethoscope, Heart, Sparkles } from "lucide-react";
 
 const services = [
   {
-    icon: Sparkles,
-    title: "Limpieza Dental",
-    desc: "Profilaxis profesional para eliminar placa y sarro. Mantén tu sonrisa saludable.",
+    icon: Smile,
+    title: "Diseño de Sonrisa",
+    desc: "Transformamos tu sonrisa con carillas, coronas y rehabilitación estética. Resultados naturales y duraderos.",
   },
   {
     icon: Syringe,
-    title: "Blanqueamiento",
-    desc: "Recupera el brillo de tu sonrisa con nuestros tratamientos de blanqueamiento seguro.",
-  },
-  {
-    icon: Braces,
-    title: "Ortodoncia",
-    desc: "Alineación dental con brackets tradicionales o tratamientos estéticos.",
+    title: "Endodoncia",
+    desc: "Tratamiento de conducto especializado. Salvamos tu diente eliminando la infección desde la raíz.",
   },
   {
     icon: Heart,
     title: "Implantes",
-    desc: "Reemplaza dientes perdidos con implantes de alta calidad. Resultados naturales.",
+    desc: "Reemplaza dientes perdidos con implantes de titanio de alta calidad. Parecen dientes naturales.",
   },
   {
-    icon: Smile,
-    title: "Diseño de Sonrisa",
-    desc: "Transforma tu sonrisa con carillas, coronas y rehabilitación estética.",
+    icon: Braces,
+    title: "Ortodoncia (Brackets)",
+    desc: "Alineación dental con brackets tradicionales y estéticos. Tu mejor sonrisa en cada etapa.",
   },
   {
     icon: Stethoscope,
-    title: "Odontología General",
-    desc: "Extracciones, endodoncia, resinas y todos tus cuidados dentales.",
+    title: "Prótesis Dental",
+    desc: "Prótesis fijas, flexibles y removibles sin ganchos metálicos. Recupera tu funcionalidad y estética.",
+  },
+  {
+    icon: Sparkles,
+    title: "Blanqueamiento",
+    desc: "Recupera el brillo de tu sonrisa con nuestros tratamientos de blanqueamiento dental seguro.",
   },
 ];
 
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.1 },
-  },
+  visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
 };
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5 },
-  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 export default function Services() {
   return (
     <section id="servicios" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,12 +61,11 @@ export default function Services() {
             Nuestros <span className="text-brand-600">Servicios</span>
           </h2>
           <p className="text-dark-500 max-w-2xl mx-auto text-lg">
-            Ofrecemos odontología integral para toda la familia. Desde limpieza
-            de rutina hasta tratamientos especializados.
+            Odontología general y especializada en Puerto Plata. Desde diseño de
+            sonrisa hasta implantes y endodoncia.
           </p>
         </motion.div>
 
-        {/* Services Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -100,9 +84,7 @@ export default function Services() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-100 transition-colors">
                 <service.icon className="w-6 h-6 text-brand-600" />
               </div>
-              <h3 className="text-lg font-semibold text-dark-900 mb-2">
-                {service.title}
-              </h3>
+              <h3 className="text-lg font-semibold text-dark-900 mb-2">{service.title}</h3>
               <p className="text-sm text-dark-500">{service.desc}</p>
             </motion.div>
           ))}

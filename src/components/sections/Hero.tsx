@@ -3,35 +3,30 @@
 import { motion } from "motion/react";
 import { Phone, MessageCircle, MapPin, Clock, Sparkles } from "lucide-react";
 
-const WHATSAPP_NUMBER = "18295202975";
-const PHONE_DISPLAY = "(829) 520-2975";
-const PHONE_ALT = "(809) 552-0165";
+const WHATSAPP_NUMBER = "18493546414";
+const PHONE_DISPLAY = "(849) 354-6414";
+const PHONE_ALT = "(809) 586-6414";
 
 export default function Hero() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=¡Hola!+Quisiera+agendar+una+cita+en+DentiSalud+Bávaro.`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=¡Hola!+Quisiera+agendar+una+cita+con+la+Dra.+Ingrid+Morrobel.`;
 
   return (
     <section
       id="inicio"
       className="relative min-h-screen flex items-center pt-16 overflow-hidden"
     >
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-accent-50" />
-
-      {/* Decorative circles */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-brand-100/40 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-100/30 rounded-full blur-3xl" />
 
       <div className="relative max-w-6xl mx-auto px-4 py-20 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left — Text Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center md:text-left"
           >
-            {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -39,20 +34,18 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-brand-100 text-brand-700 rounded-full text-xs font-medium mb-6"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              Odontología Integral en Bávaro, Punta Cana
+              Odontología General en Puerto Plata
             </motion.div>
 
-            {/* Title */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark-900 leading-tight mb-4">
-              <span className="text-brand-600">DentiSalud</span>{" "}
-              <span className="text-accent-500">Bávaro</span>
+              <span className="text-brand-600">Dra. Ingrid</span>{" "}
+              <span className="text-accent-500">Morrobel</span>
             </h1>
             <p className="text-lg sm:text-xl text-dark-500 mb-8 max-w-lg mx-auto md:mx-0">
-              Tu sonrisa es nuestra prioridad. Atención dental de calidad con
-              tecnología moderna y un trato cercano.
+              Especialistas en devolver sonrisas. Endodoncia, implantes,
+              ortodoncia y diseño de sonrisa con calidad y calidez.
             </p>
 
-            {/* Big Phone CTA */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -85,20 +78,18 @@ export default function Hero() {
               </a>
             </motion.div>
 
-            {/* Info Chips */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <div className="flex items-center gap-2 text-sm text-dark-500">
                 <Clock className="w-4 h-4 text-brand-400" />
-                Lun-Vie 9am-5pm | Sáb 9am-1pm
+                Lun-Vie 8:30am-6pm | Sáb 8:30am-1pm
               </div>
               <div className="flex items-center gap-2 text-sm text-dark-500">
                 <MapPin className="w-4 h-4 text-brand-400" />
-                Plaza Caribe, El Cortecito, Bávaro
+                Calle 27 de Febrero No. 7-B, Puerto Plata
               </div>
             </div>
           </motion.div>
 
-          {/* Right — Brand Visual */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -112,50 +103,28 @@ export default function Hero() {
                 scale: [1, 1.03, 1],
               }}
               transition={{
-                y: {
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                },
-                scale: {
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                },
+                y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+                scale: { duration: 4, repeat: Infinity, ease: "easeInOut" },
               }}
             >
               <img
                 src="/images/logo-icon.png"
-                alt="DentiSalud Bávaro"
+                alt="Dra. Ingrid Morrobel"
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
             </motion.div>
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
           className="flex justify-center mt-16"
         >
-          <a
-            href="#servicios"
-            className="text-dark-400 hover:text-brand-600 transition-colors"
-          >
-            <svg
-              className="w-6 h-6 animate-bounce"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
+          <a href="#servicios" className="text-dark-400 hover:text-brand-600 transition-colors">
+            <svg className="w-6 h-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
           </a>
         </motion.div>

@@ -15,13 +15,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "DentiSalud Bávaro | Odontología Integral en Bávaro, Punta Cana",
+  title:
+    "Clínica Dental Dra. Ingrid Morrobel | Odontología en Puerto Plata",
   description:
-    "Clinica dental en Bávaro, Punta Cana. Odontología integral: limpieza, blanqueamiento, ortodoncia, implantes. Agenda tu cita por WhatsApp.",
+    "Odontología general y especializada en Puerto Plata. Endodoncia, implantes, prótesis, cirugía, ortodoncia y diseño de sonrisa. Agenda tu cita por WhatsApp.",
   openGraph: {
-    title: "DentiSalud Bávaro | Odontología Integral",
+    title: "Dra. Ingrid Morrobel | Odontología en Puerto Plata",
     description:
-      "Tu clinica dental de confianza en Bávaro. Agenda tu cita hoy.",
+      "Tu clínica dental de confianza en Puerto Plata. Agenda tu cita hoy.",
     type: "website",
     locale: "es_DO",
   },
